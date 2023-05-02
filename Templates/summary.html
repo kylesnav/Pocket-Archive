@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Summary</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>{{ article.title }}</h1>
+      <p><strong>Publication:</strong> {{ article.publication }}</p>
+      <p><strong>URL:</strong> <a href="{{ article.url }}" target="_blank">{{ article.url }}</a></p>
+      <h2>Summary</h2>
+      <p>{{ article.summary }}</p>
+      <a href="{{ url_for('articles') }}" class="btn btn-primary">Back to Articles</a>
+    </div>
+  </body>
+</html>

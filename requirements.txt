@@ -1,0 +1,8 @@
+openai
+os
+beautifulsoup4
+requests
+urllib
+dotenv
+json
+flask
