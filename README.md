@@ -15,6 +15,16 @@ To mitigate API usage costs, OpenAI's API is only called when the user clicks on
 4. Run *app.py* to start the server.
 5. Navigate to http://127.0.0.1:5000/ in your browser.
 
+## Files
+- [app.py](app.py) - Primary Flask app.
+- [tokens.py](tokens.py) - GetPocket API access/request token retrieval
+- [articles.py](articles.py) - GetPocket API call to retrieve articles.
+- [summarize.py](summarize.py) - OpenAI API call to summarize article.
+- [templates/](templates/) - HTML templates for Flask ([articles.html](templates/articles.html) for the article list view, [summary.html](templates/summary.html) for the summary view).
+- [.env.copy](.env.copy) - Token/key storage.
+- [requirements.txt](requirements.txt) - Python dependencies.
+
+# Screenshots
 ## List View
 ![screenshot.png](Screenshots/List.png)
 ## Summary View
