@@ -26,8 +26,6 @@ def get_saved_articles(consumer_key, access_token):
     else:
         raise Exception(f"Error while fetching articles: {response.text}")
 
-    
-
 def extract_article_info(articles):
     article_list = []
     for article_id, article in articles.items():
