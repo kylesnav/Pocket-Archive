@@ -18,9 +18,6 @@ def summarize_text(text, max_words):
         timeout=15,
     )
     summary = response.choices[0].text.strip()
-    words = summary.split()
-    if len(words) > max_words:
-        summary = " ".join(words[:max_words]) + "..."
     return summary
 
 def scrape_text(url):
